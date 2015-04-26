@@ -1,0 +1,2729 @@
+# ERROR: No extended dataflow license exists
+# do mpnc_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /software/altera/13.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /software/altera/13.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# WARNING: No extended dataflow license exists
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: /home/wchn/Documents/ece411_mp3/mpnc/testbench.sv(46): (vlog-2730) Undefined variable: 'rw'.
+# ** Error: /home/wchn/Documents/ece411_mp3/mpnc/testbench.sv(46): (vlog-2730) Undefined variable: 'send'.
+# ** Error: /home/wchn/Documents/ece411_mp3/mpnc/testbench.sv(46): (vlog-2730) Undefined variable: 't_wdata'.
+# ** Error: /home/wchn/Documents/ece411_mp3/mpnc/testbench.sv(46): (vlog-2730) Undefined variable: 't_addr'.
+# ** Error: /home/wchn/Documents/ece411_mp3/mpnc/testbench.sv(52): 'rw' already declared in this scope (testbench).
+# ** Error: /home/wchn/Documents/ece411_mp3/mpnc/testbench.sv(52): 'send' already declared in this scope (testbench).
+# ** Error: /home/wchn/Documents/ece411_mp3/mpnc/testbench.sv(53): 't_wdata' already declared in this scope (testbench).
+# ** Error: /home/wchn/Documents/ece411_mp3/mpnc/testbench.sv(53): 't_addr' already declared in this scope (testbench).
+# ** Error: /software/altera/13.1/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./mpnc_run_msim_rtl_verilog.do line 18
+# /software/altera/13.1/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}"
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# WARNING: No extended dataflow license exists
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+add wave -position insertpoint sim:/testbench/mem0/*
+restart -f
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+run 800ns
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# WARNING: No extended dataflow license exists
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+add wave -position insertpoint sim:/testbench/mem0/*
+restart -f
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+run 800ns
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# WARNING: No extended dataflow license exists
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+run 400ns
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Error: (vish-4014) No objects found matching '/testbench/d_mem_byte_enable'.
+# Executing ONERROR command at macro ./wave.do line 11
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+add wave -position insertpoint  \
+sim:/testbench/cache/datapath/data0/datain \
+sim:/testbench/cache/datapath/data0/data
+add wave -position insertpoint  \
+sim:/testbench/cache/datapath/data1/datain \
+sim:/testbench/cache/datapath/data1/data
+restart -f
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+run 800ns
+add wave -position insertpoint  \
+sim:/testbench/send
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/wchn/Documents/ece411_mp3/mpnc/simulation/modelsim/wave.do
+run 800ns
+do gg.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/lc3b_types.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package lc3b_types
+# 
+# Top level modules:
+# 	--none--
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mpnc_arbiter
+# 
+# Top level modules:
+# 	mpnc_arbiter
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/replacement_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package replacement_buffer_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module replacement_buffer
+# 
+# Top level modules:
+# 	replacement_buffer
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mshr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mshr_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mshr
+# 
+# Top level modules:
+# 	mshr
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_datapath.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_datapath_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_datapath
+# 
+# Top level modules:
+# 	mpnc_datapath
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_array.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_array_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_array
+# 
+# Top level modules:
+# 	mpnc_array
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc_control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_control_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc_control
+# 
+# Top level modules:
+# 	mpnc_control
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/mpnc.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package mpnc_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module mpnc
+# 
+# Top level modules:
+# 	mpnc
+# 
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package testbench_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -sv -work work +incdir+/home/wchn/Documents/ece411_mp3/mpnc {/home/wchn/Documents/ece411_mp3/mpnc/test_cpu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_cpu
+# -- Compiling module test_mem
+# 
+# Top level modules:
+# 	test_cpu
+# 	test_mem
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# Loading sv_std.std
+# Loading work.lc3b_types
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.mpnc_sv_unit
+# Loading work.mpnc
+# Loading work.mpnc_datapath_sv_unit
+# Loading work.mpnc_datapath
+# Loading work.mux4
+# Loading work.mshr_sv_unit
+# Loading work.mshr
+# Loading work.replacement_buffer_sv_unit
+# Loading work.replacement_buffer
+# Loading work.mpnc_array_sv_unit
+# Loading work.mpnc_array
+# Loading work.mpnc_control_sv_unit
+# Loading work.mpnc_control
+# Loading work.mpnc_arbiter
+# Loading work.test_cpu
+# Loading work.test_mem
+# Window cannot be closed because the modal window "Quit Vsim" is still open.
+# Window cannot be closed because the modal window "Quit Vsim" is still open.
